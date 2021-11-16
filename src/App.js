@@ -2,6 +2,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import Service from './components/Service/Service';
 import NotFound from './components/NotFound/NotFound';
+import Invoices from './Invoices';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/service" element={<Service />}></Route>
+          <Route path="/invoices/:number" element={<Invoices />}></Route>
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       
